@@ -1,12 +1,10 @@
 *{
     overflow-x: hidden; /* Prevents horizontal scrolling */
-    margin: 0; /* Resets default body margin */
-    padding: 0; /* Resets default body padding */
+    margin: 0;
+    padding: 0;
 }
 
-/* Other styles */
-
-/* Ensure your content doesn't exceed the viewport width */
+/* This is to ensure that the content doesn't exceed the viewport width */
 .main-content {
     margin: 10px auto; /* Centers the content */
     max-width: 100vw; /* Sets the maximum width to the viewport width */

@@ -1,4 +1,3 @@
-// loader.js
 window.addEventListener('load', function () {
     const loader = document.querySelector('.loader-container');
     const mainContent = document.querySelector('.main-content');
