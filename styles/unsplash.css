@@ -1,0 +1,18 @@
+.unsplash {
+    display: flex;
+    flex-direction: column;
+    width: 1920px;
+    background: #FFF;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.unsplash-image {
+    display: flex;
+    width: 1491px;
+    height: 150px;
+    border-radius: 10px;
+    background-image: url('../public/images/unsplash.png');
+    background-size: contain;
+    background-position: center;    
+}
