@@ -1,6 +1,4 @@
 .unsplash {
-    display: flex;
-    flex-direction: column;
     width: 1920px;
     background: #FFF;
     border-radius: 10px;
@@ -9,7 +7,7 @@
 
 .unsplash-image {
     display: flex;
-    width: 1491px;
+    width: 1481px;
     height: 150px;
     border-radius: 10px;
     background-image: url('../public/images/unsplash.png');
