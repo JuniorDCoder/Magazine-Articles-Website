@@ -15,7 +15,7 @@ To get started with the Scribe Magazine Articles Website project, follow the ste
 
 1. Clone the repository to your local machine using the following command:
    ````
-   git clone https://github.com/your-username/Magazine-Articles-Website.git
+   git clone https://github.com/JuniorDCoder/Magazine-Articles-Website.git
    ```
 2. Navigate to the project's root directory:
    ````
