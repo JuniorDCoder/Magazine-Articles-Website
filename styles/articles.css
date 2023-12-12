@@ -63,3 +63,14 @@
     font-size: 12px;
     color: #888;
 }
+
+@media screen and (max-width: 768px) {
+    .articles-container {
+        flex-direction: column;
+        margin-top: 20px auto;
+    }
+    .article{
+        width: 95%;
+        margin:10px auto;
+    }
+}

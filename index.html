@@ -20,11 +20,15 @@
     </div>
 
     <!-- Main content goes here -->
-    <div class="main-content" style="display: none;">
+    <div class="main-content" style="display: none;"> 
         
         <header class="header">
             <nav class="navigation">
-                <a href="./" class="navigation-item navigation-link">Scribe . . .</a>
+                <div class="brand">
+                    <a href="./" class="navigation-item navigation-link">Scribe ...</a>
+                    <div class="hamburger">&#9776;</div> 
+                </div>
+                
                 <!-- Navigation items as dropdown -->
                 
                 <div class="dropdown">
@@ -71,7 +75,8 @@
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
+                               
             </nav>
         </header>
         <section class="unsplash">
@@ -90,6 +95,7 @@
         </footer>
     </div>
     <script src="scripts/get-all-articles.js"></script>
+    <script src="scripts/header.js"></script>
     <script src="scripts/loader.js"></script>
     <script src="scripts/scrollToTop.js">
     </script>
