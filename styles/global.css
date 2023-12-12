@@ -10,3 +10,25 @@
 .main-content {
     overflow-x: hidden; /* Hides any content that exceeds the viewport width */
 }
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    z-index: 999;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+  
+#scrollToTopButton:hover {
+    opacity: 0.7;
+}

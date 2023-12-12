@@ -18,11 +18,12 @@ h1.loader-heading {
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Roboto;
-    font-size: 50px;
+    font-size: 5vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-bottom: 15px;
+    -webkit-text-stroke: 0.2vw #FC4308;
 }
 
 .progress-bar {
