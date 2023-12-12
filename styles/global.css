@@ -16,17 +16,25 @@
     bottom: 20px;
     right: 20px;
     display: none;
-    width: 40px;
-    height: 40px;
-    background-color: #333;
+    width: 70px;
+    height: 70px;
+    background-color: purple;
     color: #fff;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
+    line-height: 70px;
     font-size: 20px;
     z-index: 999;
     text-decoration: none;
     transition: opacity 0.3s;
+}
+  
+#scrollToTopButton i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2vw;
 }
   
 #scrollToTopButton:hover {
