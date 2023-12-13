@@ -9,7 +9,6 @@
 }
 .brand {
     display: flex;
-
     align-items: center;
 }
 
@@ -29,6 +28,7 @@
     display: inline-block;
     margin-left: 20px;
     transition: 0.3s ease-out;
+    text-decoration: none;
 }
 .dropdown a:hover{
     color: #FC4308;
