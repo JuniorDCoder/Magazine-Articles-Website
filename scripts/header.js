@@ -7,5 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
     hamburger.addEventListener('click', function () {
       navigation.classList.toggle('active');
     });
+});
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  let categories = [...new Set(articles.map(article => article.category))];
+  let dropdownContent = document.getElementById('dropdown-content');
+  categories.forEach(category => {
+      let a = document.createElement('a');
+      a.href = "#";
+      a.textContent = category;
+      dropdownContent.appendChild(a);
   });
-  
+});
