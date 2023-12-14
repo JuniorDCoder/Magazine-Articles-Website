@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/unsplash.css">
+    <link rel="stylesheet" href="styles/articles.css">
+    <link rel="stylesheet" href="styles/profile.css">
+
+</head>
+<body>
+   
+        <header class="header">
+            <nav class="navigation">
+                <a href="./" class="navigation-item navigation-link">Scribe . . .</a>
+                <!-- Navigation items as dropdown -->
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="#">Technology</a>
+                        <a href="#">Fashion</a>
+                        <a href="#">Science</a>
+                    </div>
+                </div>
+                <div class="dropdown active">
+                    <a class="dropbtn">Home</a>
+                    
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Articles</a>
+                    
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">About Us</a>
+                    
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Contact Us</a>
+                    
+                </div>
+                <div class="right-items">
+                    <!-- Search bar -->
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search Anything">
+                        <button type="submit">Search</button>
+                    </div>
+                    <!-- Profile image dropdown. I will render this section dynamicaly after the user logs in -->
+                    <div class="profile-dropdown">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <img src="public/images/profile.png" alt="">
+                                <span class="username">Foryoung Junior</span>
+                            </button>
+                            <div class="profile dropdown-content">
+                                <a href="/user-profile.html">Profile</a>
+                                <a href="#">My Articles</a>
+                                <a href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </nav>
+        </header>
+        
+        
+    
+
+        <main>
+            <section id="about" class="about">
+                <div class="container">
+          
+                 
+          
+                  <div class="row">
+                    <div class="col-lg-4" data-aos="fade-right">
+                      <img src="public/images/profile.png" class="img-fluid" alt="" height="300" width="250" id="profile-img">
+                    </div>
+                    
+                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" id="info">
+                    </br>
+                    </br>
+                    </br>
+                        <div>
+                            <h3> Foryoung Junior</h3></br>
+                                <p class="fst-italic">
+                                    <b>foryoungjunior@example.com</b>
+                                </p>
+                        </div>
+                        </br>
+                        </br>
+                        </br>
+                        
+                        <p>_____________________________________________________________________________________________________</p></br>
+                        
+                        <div class="form-container">
+
+                            <p><i>Edit info</i></p><br>
+                
+                            <div class="col-lg-6">
+                                <div class="form-el">
+                                    <label for="username">Username</label> 
+                                    <input class="input" id="username" name="username" type="text" placeholder="Foryoung Junior" size="81"/>
+                                  </div>
+                            </div>
+                            <br>
+                            <div class="col-lg-6">
+                                <div class="form-el">
+                                    <label for="email">email</label>
+                                    <input class="input" id="email" name="email" type="text" placeholder="foryoungjunior@example.com" size="90" />
+                                  </div>
+                              
+                            </div>
+                            <br>
+                            <div class="col-lg-6">
+                                <div class="form-el">
+                                    <label for="password">password</label>
+                                    <input class="input" id="password" name="password" type="password" placeholder="***************" size="82" />
+                                  </div>
+                              
+                            </div> 
+                            <br> 
+                            <p><button id="submit" type="submit" class="update-button">Update</button></p>
+                                                    
+                    </div>                        
+                    </div>
+                  </div> 
+                           
+                </div>
+                
+              </section>
+              <p>______________________________________________________________________________________________________________________________________________________</p>
+          
+          <section id="services" class="services">
+
+            <h1 class="art">Your Articles</h1>
+              <div class="container">
+
+                <div class="articles-container">
+            
+                </div>
+          
+                
+          
+              </div>
+            </section>
+        </main>
+    <script src="scripts/get-all-articles.js"></script>
+    <script src="scripts/loader.js"></script>
+    
+</body>
+</html>
