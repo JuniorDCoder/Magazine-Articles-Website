@@ -80,6 +80,7 @@ section {
     border-radius: 10px;
     justify-content: center;
     transition: 0.5s;
+    cursor: pointer;
   }
 
   .update-button:hover{
