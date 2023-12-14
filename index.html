@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/unsplash.css">
     <link rel="stylesheet" href="styles/articles.css">
+    <link rel="stylesheet" href="styles/welcome.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <div class="loader-container">
@@ -33,10 +35,7 @@
                 
                 <div class="dropdown">
                     <button class="dropbtn">Categories</button>
-                    <div class="dropdown-content">
-                        <a href="#">Technology</a>
-                        <a href="#">Fashion</a>
-                        <a href="#">Science</a>
+                    <div id="dropdown-content" class="dropdown-content">
                     </div>
                 </div>
                 <div class="dropdown active">
@@ -48,11 +47,11 @@
                     
                 </div>
                 <div class="dropdown">
-                    <a class="dropbtn">About Us</a>
+                    <a href="./about.html" class="dropbtn">About Us</a>
                     
                 </div>
                 <div class="dropdown">
-                    <a class="dropbtn">Contact Us</a>
+                    <a href="./contact.html" class="dropbtn">Contact Us</a>
                     
                 </div>
                 <div class="dropdown">
@@ -83,6 +82,10 @@
                                
             </nav>
         </header>
+        <section class="welcome-section">
+            <h1>Welcome to Scribe</h1>
+            <p>Your one-stop destination for the best articles on various topics. Explore, learn, and share!</p>
+        </section>
         <section class="unsplash">
             <div class="unsplash-image">
 
@@ -94,10 +97,19 @@
         <div class="articles-container">
             
         </div>
-        <footer>
+        <footer class="site-footer">
             <a href="#" id="scrollToTopButton" title="Scroll to Top">
                 <i class="fas fa-chevron-up"></i>
             </a>
+            <div class="footer-content">
+                <h3>Scribe . . .</h3>
+                <p>Your one-stop destination for the best articles on various topics.</p>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
     <script src="scripts/articles.js"></script>

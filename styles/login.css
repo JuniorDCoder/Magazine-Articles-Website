@@ -1,59 +1,23 @@
-.box{
-    margin: 20px 0 0 20px;
-    background-color: cyan;
-    height: 80px;
-    width: 50%;
-    border-radius: 10px;
-    transition: 0.5s ease-out;
-}
-
-.row{
-    display: flex;
-    flex-direction: row;
-    margin-right: 20px;
-}
-.nav{
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-span{
-    padding-top: 20px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.row > a{
-    text-decoration: none;
-    color: #0A9f89;
-}
-.row > a:hover{
-    color: #fff;
-}
-
-.box:hover{
-    background-color: magenta;
-}
-
 
 .login{
     margin: auto;
     width: 300px;
     height: auto;
-    background-color: lightblue;
+    background-color: white;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    border: 2px solid #FC4308;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2); 
 }
 .form-item{
     padding: 0 10px 10px 10px;  
 }
 
 .form-body{
-    padding: 40px 0 40px 5px;
+    padding: 40px 10px 40px 5px;
     justify-content: space-between;
     margin: 20px;
     
@@ -63,7 +27,7 @@ span{
     padding: 5px 10px 10px 10px;
     border-radius: 10px;
     margin-top: 5px;
-    border-color: lightblue;
+    border-color: #FC4308;
 }
 .form-item > input[type="text"], input[type="password"]{
     color: cadetblue;
@@ -71,16 +35,26 @@ span{
 .form-item > input:hover{
     border-color: lightseagreen;
 }
+.login-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #FC4308;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
 
 .button{
     padding: 10px 40px 10px 40px; 
     border-radius: 10px;
     transition: 0.5s ease-out;
-    background-color: lightblue;
+    background-color: white;
     cursor: pointer;
 }
 .button:hover{
-    background-color: cadetblue;
+    background-color: #FC4308;
     color: #fff;
     font-weight: bold;
 }
@@ -92,12 +66,13 @@ span{
 }
 
 .reset{
+    margin: 15px;
     font-size: 12px;
     font-style: italic;
 }
 .reset a{
     text-decoration: none;
-    color: #02BD90;
+    color: blue;
     
 }
 

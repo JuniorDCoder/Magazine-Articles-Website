@@ -50,6 +50,11 @@
     font-size: 12px;
     color: #888;
 }
+.article-category {
+    margin-top: 10px;
+    font-weight: bold;
+    color: purple;
+}
 .comment-button {
     margin-top: 10px;
     padding: 10px;
