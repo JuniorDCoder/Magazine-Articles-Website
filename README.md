@@ -30,7 +30,7 @@ The project follows a simple directory structure:
 ```
 Magazine-Articles-Website/
 |-- index.html
-|-- profile.html
+|-- user-profile.html
 |-- all-articles.html
 |-- styles/
 |   |-- global.css
