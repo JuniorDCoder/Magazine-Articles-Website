@@ -7,6 +7,10 @@
     padding: 10px;
     margin: 10px 20px 0px 20px;
 }
+.brand {
+    display: flex;
+    align-items: center;
+}
 
 .navigation-link {
     color:#FC4308;
@@ -24,6 +28,7 @@
     display: inline-block;
     margin-left: 20px;
     transition: 0.3s ease-out;
+    text-decoration: none;
 }
 .dropdown a:hover{
     color: #FC4308;
@@ -126,4 +131,37 @@
 
 .username {
     font-weight: 500;
+}
+
+
+.hamburger {
+    display: none; /* Initially hide the hamburger icon */
+    cursor: pointer;
+    margin-left: auto;
+    padding: 10px;
+}
+  
+@media screen and (max-width: 768px) {
+    .navigation {
+      flex-direction: column; /* Show items vertically on smaller screens */
+      align-items: flex-start;
+    }
+  
+    .dropdown,
+    .right-items {
+      display: none; /* Hide navigation links and right items */
+    }
+  
+    .hamburger {
+      display: block; /* Display the hamburger icon on smaller screens */
+    }
+  
+    .navigation.active {
+      display: flex; /* Show the navigation items when active class is added */
+    }
+  
+    .navigation.active .dropdown,
+    .navigation.active .right-items {
+      display: block; /* Show dropdown links and right items when active class is added */
+    }
 }

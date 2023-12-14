@@ -63,3 +63,22 @@
     font-size: 12px;
     color: #888;
 }
+
+#search-results-heading{
+    margin: 20px;
+}
+.search-keyword{
+    font-size: 32px;
+    font-weight: bold;
+    color: #FC4308;
+}
+@media screen and (max-width: 768px) {
+    .articles-container {
+        flex-direction: column;
+        margin-top: 20px auto;
+    }
+    .article{
+        width: 95%;
+        margin:10px auto;
+    }
+}
