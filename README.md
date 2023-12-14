@@ -30,6 +30,7 @@ The project follows a simple directory structure:
 ```
 Magazine-Articles-Website/
 |-- index.html
+|-- profile.html
 |-- all-articles.html
 |-- styles/
 |   |-- global.css
@@ -42,6 +43,7 @@ Magazine-Articles-Website/
 ```
 
 - `index.html`: This is the main HTML file for the website.
+- `user-profile`: This is the user profile page
 - `styles/global.css`: The CSS file containing the styling rules for the website.
 - `scripts/loader.js`: The JavaScript file for client-side interactivity (Specifically the Loader ad the entry point of the site).
 - `public/images/`: A directory to store all the image files used in the project.
