@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <!-- Main content goes here -->
+    
     <div class="main-content" style="display: none;"> 
         
         <header class="header">
@@ -40,11 +40,11 @@
                     </div>
                 </div>
                 <div class="dropdown active">
-                    <a class="dropbtn">Home</a>
+                    <a href="./" class="dropbtn">Home</a>
                     
                 </div>
                 <div class="dropdown">
-                    <a class="dropbtn">Articles</a>
+                    <a href="./all-articles.html" class="dropbtn">Articles</a>
                     
                 </div>
                 <div class="dropdown">
@@ -62,7 +62,7 @@
                 <div class="right-items">
                     <!-- Search bar -->
                     <div class="search-bar">
-                        <input type="text" placeholder="Search Anything">
+                        <input type="text" required placeholder="Search Anything">
                         <button type="submit">Search</button>
                     </div>
                     <!-- Profile image dropdown. I will render this section dynamicaly after the user logs in -->
@@ -89,6 +89,8 @@
             </div>
             
         </section>
+
+        <h1 id="search-results-heading" style="display: none;">Search Results</h1>    
         <div class="articles-container">
             
         </div>
@@ -98,7 +100,9 @@
             </a>
         </footer>
     </div>
-    <script src="scripts/get-all-articles.js"></script>
+    <script src="scripts/articles.js"></script>
+    <script src="scripts/search.js"></script>
+    <!-- <script src="scripts/get-all-articles.js"></script> -->
     <script src="scripts/header.js"></script>
     <script src="scripts/loader.js"></script>
     <script src="scripts/scrollToTop.js">

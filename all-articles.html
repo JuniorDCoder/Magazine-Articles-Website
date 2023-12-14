@@ -1,133 +1,100 @@
-<!-- articles.html -->
-<div class="article">
-    <div class="article-image">
-        <img src="public/images/articles/1.png" alt="Article Image 1">
-    </div>
-    <div class="article-details">
-        <h2 class="article-title">Briefing About the cold waters</h2>
-        <p class="article-description">Cold water navigation.</p>
-        <div class="author-info">
-            <img src="public/images/profile.png" alt="Author's Profile Picture 1">
-            <div class="author-text">
-                <p class="author-name">Prince Kelly</p>
-                <p class="publish-date">Thursday, 2nd October 2023</p>
-            </div>
-        </div>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Articles</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/unsplash.css">
+    <link rel="stylesheet" href="styles/articles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+    <div class="main-content"> 
+        
+        <header class="header">
+            <nav class="navigation">
+                <div class="brand">
+                    <a href="./" class="navigation-item navigation-link">Scribe ...</a>
+                    <div class="hamburger">&#9776;</div> 
+                </div>
+                
+                <!-- Navigation items as dropdown -->
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="#">Technology</a>
+                        <a href="#">Fashion</a>
+                        <a href="#">Science</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="./" class="dropbtn">Home</a>
+                    
+                </div>
+                <div class="dropdown active">
+                    <a href="./all-articles.html" class="dropbtn">Articles</a>
+                    
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">About Us</a>
+                    
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Contact Us</a>
+                    
+                </div>
+                <div class="dropdown">
+                    <a href="login.html" class="dropbtn">Login</a>
+                    
+                </div>
+                <div class="right-items">
+                    <!-- Search bar -->
+                    <div class="search-bar">
+                        <input type="text" required placeholder="Search Anything">
+                        <button type="submit">Search</button>
+                    </div>
+                    <!-- Profile image dropdown. I will render this section dynamicaly after the user logs in -->
+                    <div class="profile-dropdown">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <img src="public/images/profile.png" alt="">
+                                <span class="username">Foryoung Junior</span>
+                            </button>
+                            <div class="profile dropdown-content">
+                                <a href="#">Profile</a>
+                                <a href="#">My Articles</a>
+                                <a href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                               
+            </nav>
+        </header>
+        <section class="unsplash">
+            <div class="unsplash-image">
 
-<div class="article">
-    <div class="article-image">
-        <img src="public/images/articles/2.png" alt="Article Image 2">
-    </div>
-    <div class="article-details">
-        <h2 class="article-title">Personal Computers</h2>
-        <p class="article-description">Multi-purpose microcomputers with varying capabilities.</p>
-        <div class="author-info">
-            <img src="public/images/profile.png" alt="Author's Profile Picture 2">
-            <div class="author-text">
-                <p class="author-name">Foryoung Junior</p>
-                <p class="publish-date">Thursday, 30th September 2023</p>
             </div>
-        </div>
-    </div>
-</div>
-<div class="article">
-    <div class="article-image">
-        <img src="public/images/articles/3.png" alt="Article Image 1">
-    </div>
-    <div class="article-details">
-        <h2 class="article-title">Latest Cars</h2>
-        <p class="article-description">Latest 2023 car models.</p>
-        <div class="author-info">
-            <img src="public/images/profile.png" alt="Author's Profile Picture 1">
-            <div class="author-text">
-                <p class="author-name">Chia Raissa</p>
-                <p class="publish-date">Saturday, 2nd October 2023</p>
-            </div>
-        </div>
-    </div>
-</div>
+            
+        </section>
 
-<div class="article">
-    <div class="article-image">
-        <img src="public/images/articles/4.png" alt="Article Image 2">
-    </div>
-    <div class="article-details">
-        <h2 class="article-title">HP laptops</h2>
-        <p class="article-description">The latest HP laptops and their prices.</p>
-        <div class="author-info">
-            <img src="public/images/profile.png" alt="Author's Profile Picture 2">
-            <div class="author-text">
-                <p class="author-name">Bonya Ransom</p>
-                <p class="publish-date">Monday, 4th October 2023</p>
-            </div>
+        <h1 id="search-results-heading" style="display: none;">Search Results</h1>    
+        <div class="articles-container">
+            
         </div>
+        <footer>
+            <a href="#" id="scrollToTopButton" title="Scroll to Top">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </footer>
     </div>
-</div>
-<div class="article">
-    <div class="article-image">
-        <img src="public/images/articles/1.png" alt="Article Image 1">
-    </div>
-    <div class="article-details">
-        <h2 class="article-title">Briefing About the cold waters</h2>
-        <p class="article-description">Cold water navigation.</p>
-        <div class="author-info">
-            <img src="public/images/profile.png" alt="Author's Profile Picture 1">
-            <div class="author-text">
-                <p class="author-name">Prince Kelly</p>
-                <p class="publish-date">Thursday, 2nd October 2023</p>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="article">
-    <div class="article-image">
-        <img src="public/images/articles/2.png" alt="Article Image 2">
-    </div>
-    <div class="article-details">
-        <h2 class="article-title">Personal Computers</h2>
-        <p class="article-description">Multi-purpose microcomputers with varying capabilities.</p>
-        <div class="author-info">
-            <img src="public/images/profile.png" alt="Author's Profile Picture 2">
-            <div class="author-text">
-                <p class="author-name">Foryoung Junior</p>
-                <p class="publish-date">Thursday, 30th September 2004</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="article">
-    <div class="article-image">
-        <img src="public/images/articles/3.png" alt="Article Image 1">
-    </div>
-    <div class="article-details">
-        <h2 class="article-title">Latest Cars</h2>
-        <p class="article-description">Latest 2023 car models.</p>
-        <div class="author-info">
-            <img src="public/images/profile.png" alt="Author's Profile Picture 1">
-            <div class="author-text">
-                <p class="author-name">Chia Raissa</p>
-                <p class="publish-date">Saturday, 2nd October 2023</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="article-image">
-        <img src="public/images/articles/4.png" alt="Article Image 2">
-    </div>
-    <div class="article-details">
-        <h2 class="article-title">HP Laptops</h2>
-        <p class="article-description">The latest HP laptops and their prices.</p>
-        <div class="author-info">
-            <img src="public/images/profile.png" alt="Author's Profile Picture 2">
-            <div class="author-text">
-                <p class="author-name">Bonya Ransom</p>
-                <p class="publish-date">Monday, 4th October 2023</p>
-            </div>
-        </div>
-    </div>
-</div>
+    <script src="scripts/articles.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/scrollToTop.js"></script>
+</body>
+</html>
