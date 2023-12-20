@@ -5,7 +5,7 @@ let articles = [
         title: "Briefing About the cold waters",
         description: "Description of the first article content goes here.",
         authorImage: "public/images/profile.png",
-        authorName: "Nyuydine Bill",
+        authorName: "Chia Raissa",
         publishDate: "Thursday, 2nd October 2004",
         category: "Nature",
     },
@@ -15,7 +15,7 @@ let articles = [
         title: "Title of the Second Article",
         description: "Description of the second article content goes here.",
         authorImage: "public/images/profile.png",
-        authorName: "Foryoung Junior",
+        authorName: "Clyde",
         publishDate: "Thursday, 30th September 2004",
         category: "Wildlife",
     },
@@ -25,7 +25,7 @@ let articles = [
         title: "Briefing About the cold waters",
         description: "Description of the first article content goes here.",
         authorImage: "public/images/profile.png",
-        authorName: "Nyuydine Bill",
+        authorName: "Chia Raissa",
         publishDate: "Publication Date 1",
         category: "Technology",
     },
@@ -45,7 +45,7 @@ let articles = [
         title: "Exploring the Rainforest",
         description: "Discover the wonders hidden within the rainforest.",
         authorImage: "public/images/profile.png",
-        authorName: "Elena Rivers",
+        authorName: "Ma Boy Roy",
         publishDate: "Wednesday, 15th November 2023",
         category: "Travel",
       },
@@ -55,7 +55,7 @@ let articles = [
         title: "The Impact of Renewable Energy",
         description: "Examining the role of renewables in our future.",
         authorImage: "public/images/profile.png",
-        authorName: "Alex Green",
+        authorName: "Ma Boy Ransom",
         publishDate: "Saturday, 5th December 2023",
         category: "Science",
       },
@@ -134,22 +134,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
         let commentButton = event.target;
         /* 
             Here,the comment is gotten from the user from the user.
-            I use the comment to do something else later.
+            We use the comment to do something else later.
         */
     }
     
 });
 
 
-// I am getting the container where the articles will be appended
+// We are getting the container where the articles will be appended
 let main_container = document.querySelector('.articles-container');
 
-// here, i am generating and append the articles
+// here, we are generating and append the articles
 articles.forEach(article => {
     let html = generateArticleHTML(article);
     main_container.innerHTML += html;
 });
-
-
-
-
