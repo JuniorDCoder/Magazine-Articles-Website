@@ -1,0 +1,14 @@
+*{
+    margin : 0;
+    padding:0;
+    box-szing:border-box;
+}
+
+.header{
+    posotion:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:25px,12.5%;
+
+}

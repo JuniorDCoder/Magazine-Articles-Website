@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="main-content">
+        <header class="header">
+            <nav class="navigation">
+                <div class="brand">
+                    <a href="./" class="navigation-item navigation-link">Scribe ...</a>
+                    <div class="hamburger">&#9776;</div> 
+                </div>
+                
+                <!-- Navigation items as dropdown -->
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div id="dropdown-content" class="dropdown-content">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="./" class="dropbtn">Home</a>
+                    
+                </div>
+                <div class="dropdown">
+                    <a href="./all-articles.html" class="dropbtn">Articles</a>
+                    
+                </div>
+                <div class="dropdown">
+                    <a href="./about.html" class="dropbtn">About Us</a>
+                    
+                </div>
+                <div class="dropdown">
+                    <a href="./contact.html" class="dropbtn">Contact Us</a>
+                    
+                </div>
+                <div class="dropdown active">
+                    <a href="login.html" class="dropbtn">Login</a>
+                    
+                </div>
+                <div class="right-items">
+                    <!-- Search bar -->
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search Won't Work Here!">
+                        <button type="submit">Search in Home Page</button>
+                    </div>
+                    <!-- Profile image dropdown. I will render this section dynamicaly after the user logs in -->
+                    <div class="profile-dropdown" style="display: none;">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <img src="public/images/profile.png" alt="">
+                                <span class="username">Foryoung Junior</span>
+                            </button>
+                            <div class="profile dropdown-content">
+                                <a href="./user-profile.html">Profile</a>
+                                <a href="./user-profile.html#services">My Articles</a>
+                                <a href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                               
+            </nav>
+        </header>
+        <div class="login">
+            <form id="loginForm">
+                
+                <div class="form-body">
+                    
+                    <h2 class="login-heading">Login Now!</h2>
+                    <div class="form-item">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                        <p id="errorUsername">
+
+                        </p>
+                    </div>
+                    <div class="form-item">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                        <p id="errorPassword">
+
+                        </p>
+                        <span class="reset">Forgot your passowrd?<a href="">&nbsp; Reset here</a></span>
+                    </div>
+                    
+            
+                    <div class="form-item">
+                        <button class="button" type="submit">Login</button>
+                    </div>
+    
+                </div>
+    
+                
+            </form>
+        </div>
+
+       
+    </div>
+
+    <script src="scripts/articles.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/header.js"></script>
+</body>
+</html>
+
+
+
+

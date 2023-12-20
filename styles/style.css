@@ -1,0 +1,289 @@
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding: 0 5%;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 16px;
+  color: #e4e4e4;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 30px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #70F570;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -6px;
+  height: 2px;
+  background: #70F570;
+  border-radius: 5px;
+  opacity: 0;
+  transition: .5s;
+  transform: translateY(5px);
+}
+
+.navbar a:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.box-form {
+  display: flex;
+  margin-top: 80px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 6px #090b6f85;
+  border-radius: 10px;
+}
+
+@media (max-width: 980px) {
+  .box-form {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.box-form div {
+  height: auto;
+}
+
+.box-form .left {
+  color: #FFFFFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("background.jpg");
+  overflow: hidden;
+  flex: 1;
+}
+
+.box-form .left .overlay {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: rgba(89, 97, 249, 0.678);
+  box-sizing: border-box;
+}
+
+.box-form .left .overlay h1 {
+  font-size: 3em;
+  line-height: 1;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.box-form .left .overlay p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.box-form .left .overlay span {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.box-form .left .overlay span p {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.box-form .left .overlay span a {
+  background: #3b5998;
+  color: #FFFFFF;
+  margin-top: 10px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 3px 6px 1px #042d4657;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.box-form .left .overlay span a:last-child {
+  background: #1dcaff;
+  margin-top: 10px;
+}
+
+.box-form .left .overlay span a:hover {
+  background: #042d4657;
+}
+
+.box-form .right {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  flex: 1;
+}
+
+@media (max-width: 980px) {
+  .box-form .right {
+    width: 100%;
+  }
+}
+
+.box-form .right h5 {
+  font-size: 2em;
+  line-height: 0;
+  margin-bottom: 20px;
+  color:whitesmoke;
+}
+
+.box-form .right p {
+  font-size: 1.2em;
+  color:white;
+  margin-bottom: 20px;
+}
+
+.box-form .right .inputs {
+  overflow: hidden;
+}
+
+.box-form .right input {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #B0B3B9;
+  transition: border-color 0.3s ease;
+}
+
+.box-form .right input:focus {
+  border-color:white;
+}
+
+.box-form .right .remember-me--forget-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box-form .right .remember-me--forget-password input {
+  margin: 0;
+  margin-right: 7px;
+  width: auto;
+}
+
+.box-form .right button {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 15px 35px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 0;
+  outline: none;
+  background-image: url("background.jpg");
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.box-form .right button:hover {
+  background-image: url("background.jpg");
+}
+
+label {
+  display: block;
+  position: relative;
+  margin-left: 30px;
+}
+
+label::before {
+  content: ' \f00c';
+  position: absolute;
+  font-family: FontAwesome;
+  background: transparent;
+  border: 3px solid #70F570;
+  border-radius: 4px;
+  color: transparent;
+  left: -30px;
+  transition: all 0.2s linear;
+}
+
+label:hover::before {
+  font-family: FontAwesome;
+  content: ' \f00c';
+  color: #fff;
+  cursor: pointer;
+  background: #70F570;
+}
+
+label:hover::before .text-checkbox {
+  background: #70F570;
+}
+
+label span.text-checkbox {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+label input[type="checkbox"] {
+  display: none;
+}
+
+.forgot-password {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #042d4657;
+}
