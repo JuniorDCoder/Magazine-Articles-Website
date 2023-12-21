@@ -1,6 +1,6 @@
-# Scribe Magazine Articles Website
+# Hello! World Magazine Articles Website
 
-Welcome to the Scribe Magazine Articles Website project repository! This is a web development project for the Web Programming 1 CA, where visitors can come and post articles, like, and comment. The purpose of this README is to guide you on how to get the repository, work on it, and push changes to separate branches named after each team member.
+Welcome to the Hello World Magazine Articles Website project repository! This is a web development project for the Web Programming 1 CA, where visitors can come and post articles, like, and comment. The purpose of this README is to guide you on how to get the repository, work on it, and push changes to separate branches named after each team member.
 
 ## Table of Contents
 1. [Getting Started](#getting-started)
