@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./styles/login1.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- <header class="header">
+      <nav class="navbar">
+        <a href="#" class="logo"> Logo</a>
+        <div class="navbar-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </header> -->
+    <div class="box-form">
+      <div class="left">
+        <div class="overlay">
+          <h1>Hello World.</h1>
+          <p>Welcome back! Log in to your account.</p>
+          <span>
+            <p>Login with social media</p>
+            <a href="#"><i class='bx bxl-facebook'></i>Login With Facebook</a>
+            <a href="#"><i class='bx bxl-twitter'></i> Login with Twitter</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="right">
+        <h5>Login</h5>
+        <form id="login-form">
+          <div class="inputs">
+            <input type="text" id="username" placeholder="Username" required>
+            <span class="error" id="username-error"></span>
+            <br>
+            <input type="password" id="password" placeholder="Password" required>
+            <span class="error" id="password-error"></span>
+          </div>
+
+          <div class="remember-me--forget-password">
+            <!-- <label>
+              <input type="checkbox" name="item" checked />
+              <span class="text-checkbox">Remember me</span>
+            </label> -->
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+
+          <button class="submit" type="submit">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="#">Create Your Account</a> - it takes less than a minute</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/login1.js"></script>
+</body>
+
+</html>
