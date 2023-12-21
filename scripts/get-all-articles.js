@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     fetch('all-articles.html')
         .then(response => response.text())
         .then(html => {
-            document.querySelector('.articles-container').innerHTML = html;
+            document.querySelector('.articles-container').innerHTML = html
         })
-        .catch(error => console.error('Error fetching articles:', error));
-});
+        .catch(error => console.error('Error fetching articles:', error))
+})

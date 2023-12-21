@@ -97,13 +97,31 @@
     color: #666;
 }
 
+.create-article-button{
+    background-color: #FC4308;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 85%;
+    margin-top: 15vh;
+}
+
 @media screen and (max-width: 768px) {
     .articles-container {
         flex-direction: column;
         margin-top: 20px auto;
     }
+    .articles-intro p{
+        margin-bottom: 5%;
+    }
     .article{
         width: 95%;
         margin:10px auto;
     }
+
+    .create-article-button{
+        margin-left: 10vw;
+        margin-top: 20vh;
+    }
 }
+

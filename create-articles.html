@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine - Articles Website | create-article</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/unsplash.css">
+    <link rel="stylesheet" href="styles/articles.css">
+    <link rel="stylesheet" href="styles/create-article.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <section class="navbar"></section>
+    <header class="header">
+        <nav class="navigation">
+            <div class="brand">
+                <a href="./" class="navigation-item navigation-link">Scribe ...</a>
+                <div class="hamburger">&#9776;</div> 
+            </div>
+            
+            <!-- Navigation items as dropdown -->
+            
+            <div class="dropdown">
+                <button class="dropbtn">Categories</button>
+                <div id="dropdown-content" class="dropdown-content">
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="./" class="dropbtn">Home</a>
+                
+            </div>
+            <div class="dropdown active">
+                <a href="./all-articles.html" class="dropbtn">Articles</a>
+                
+            </div>
+            <div class="dropdown">
+                <a href="./about.html" class="dropbtn">About Us</a>
+                
+            </div>
+            <div class="dropdown">
+                <a href="./contact.html" class="dropbtn">Contact Us</a>
+                
+            </div>
+            <div class="dropdown">
+                <a href="login.html" class="dropbtn">Login</a>
+                
+            </div>
+            <div class="right-items">
+                <!-- Search bar -->
+                <div class="search-bar">
+                    <input type="text" required placeholder="Search Anything">
+                    <button type="submit">Search</button>
+                </div>
+                <!-- Profile image dropdown. I will render this section dynamicaly after the user logs in -->
+                <div class="profile-dropdown">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <img src="public/images/profile.png" alt="">
+                            <span class="username">Foryoung Junior</span>
+                        </button>
+                        <div class="profile dropdown-content">
+                            <a href="./user-profile.html">Profile</a>
+                            <a href="./user-profile.html#services">My Articles</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                           
+        </nav>
+    </header>
+    <section class="unsplash">
+        <div class="unsplash-image">
+
+        </div>
+        <div class="post-nav">
+            <div class="profile-dropdown">
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <img src="public/images/profile.png" alt="">
+                        <!-- <span class="username">Kelly</span> -->
+                    </button>
+                </div>
+            </div>
+            <div>
+                <a href="/create-articles.html">Post</a>
+                <a href="/posts.html">Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-container">
+        <form class="article-form" id="uploadForm">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title">
+                <label for="explanation">Description</label>
+                <textarea name="explanation" cols="50" rows="20"></textarea>
+            </div>
+            <div>
+                <label for="image" id="label-image-video">Add Image or Video</label>
+                <div class="frame"></div>
+                <div>
+                    <input type="file" id="post-image" class="btn-common" name="file" style="width: 15vw;" accept="public/images/*" title="Select Image">
+                    <button type="submit" class="btn-common" id="btn-create-post">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+    <footer class="site-footer">
+        <a href="#" id="scrollToTopButton" title="Scroll to Top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <div class="footer-content">
+            <h3>Scribe . . .</h3>
+            <p>Your one-stop destination for the best articles on various topics.</p>
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Main content goes here -->
+   
+    <script src="scripts/articles.js"></script>
+    <script src="scripts/search.js"></script>
+    <!-- <script src="scripts/get-all-articles.js"></script> -->
+    <script src="scripts/header.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/scrollToTop.js"></script>
+    <script src="scripts/extend-navbar.js"></script>
+    <script src="scripts/create-article.js"></script>
+</body>
+</html>

@@ -40,3 +40,10 @@
 #scrollToTopButton:hover {
     opacity: 0.7;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0.5vh 0.2vw;
+}
+
