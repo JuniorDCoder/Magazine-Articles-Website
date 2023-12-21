@@ -118,10 +118,12 @@ function openArticle(id) {
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
+    
     let article = JSON.parse(sessionStorage.getItem('article'));
     let html = generateArticleHTML(article, true);
     let container = document.querySelector('.article-container');
     container.innerHTML = html;  
+    displayComments();
     
     window.like = function(event) {
         event.stopPropagation();
@@ -131,14 +133,69 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     window.comment = function(event) {
         event.stopPropagation();
-        let commentButton = event.target;
-        /* 
-            Here,the comment is gotten from the user from the user.
-            We use the comment to do something else later.
-        */
+    
+        let formHTML = `
+            <span class="close">&times;</span>
+            <form id="comment-form">
+                <input type="text" id="username" placeholder="Enter your name" required>
+                <textarea id="comment" placeholder="Enter your comment" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        `;
+    
+        let container = document.querySelector('#comment-form-container');
+        container.innerHTML = formHTML;
+    
+        let modal = document.querySelector('#comment-modal');
+        modal.style.display = 'block';
+    
+        let close = document.querySelector('.close');
+        close.onclick = function() {
+            modal.style.display = 'none';
+        }
+    
+        let form = document.querySelector('#comment-form');
+        form.onsubmit = function(e) {
+            e.preventDefault();
+    
+            let username = document.querySelector('#username').value;
+            let comment = document.querySelector('#comment').value;
+    
+            let comments = JSON.parse(localStorage.getItem('comments')) || [];
+            comments.push({ username, comment });
+            localStorage.setItem('comments', JSON.stringify(comments));
+    
+            modal.style.display = 'none';
+            displayComments();
+        }
     }
     
 });
+
+function displayComments() {
+    let comments = JSON.parse(localStorage.getItem('comments')) || [];
+    let html = comments.map((comment, index) => `
+        <div class="comment">
+            <h3>${comment.username}</h3>
+            <p>${comment.comment}</p>
+            <button class="delete" data-index="${index}">Delete</button>
+        </div>
+    `).join('');
+    let container = document.querySelector('.comments-container');
+    container.innerHTML = html;
+
+    let deleteButtons = document.querySelectorAll('.delete');
+    deleteButtons.forEach(button => {
+        button.onclick = function() {
+            let index = this.getAttribute('data-index');
+            let comments = JSON.parse(localStorage.getItem('comments')) || [];
+            comments.splice(index, 1);
+            localStorage.setItem('comments', JSON.stringify(comments));
+            displayComments();
+        }
+    });
+}
+
 
 
 // We are getting the container where the articles will be appended
